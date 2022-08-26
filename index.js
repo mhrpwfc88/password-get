@@ -6,9 +6,9 @@ const generatePassword= (len) => {
     const loweAlphabet = "abcdefghijklmnopgrstuvwxyz"
     const upperAlphabet = "ABCDEFGHIJKLMNOPGRSTUVWXYZ"
     const numeric = "0123456789"
-    const symbol = "!@#$%^&*()-=+[]{};:\|<>,./?~`"
+    // const symbol = "!@#$%^&*()-=+[]{};:\|<>,./?~`"
 
-    const data = loweAlphabet + upperAlphabet + numeric + symbol
+    const data = loweAlphabet + upperAlphabet + numeric 
     let generator = '';
     for (let index = 0; index < len; index++) {
         generator += data [~~(Math.random() * data.length)];
